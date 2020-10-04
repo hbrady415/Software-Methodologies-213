@@ -1,0 +1,18 @@
+Photo Library Group 65 
+Alex Rivera & Hunter Brady
+aer136 & hb306
+
+					Design changes since storyboard explained
+					
+Our only major deviation from the initial storyboard is to include a Thumbnail display controller to more clearly demonstrate the back and
+forth navigation (manual slideshow) features in the photo view to display the relevant number of images.  We realized after the submission
+that it is more intuitive to display all images as a list from which to choose instead of opening an album and sending the user to the 
+first photo in an album and navigating from there, displaying the images one at a time.  
+
+We were able to execute this by creating the ThumbController file and splitting the logic we planned to store in two.  The ThumbController
+displays a thumbnail and a caption in a table as the intermediate step between visiting the photo list with all of their displayed fields.  
+In addition we moved add photo and delete photo into the ThumbController because our previous configuration showing add photo just after 
+the location of the visiting photo was confusing for the user.  
+
+Also a create new user button was added to the login page to ease user functionality, considered a minor change because the it 
+creates a more realistic scenario but doesn’t impact the existing features.  
