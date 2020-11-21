@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1sp"
+            android:text="@string/open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myList" />
+
+        <Button
+            android:id="@+id/rename"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1sp"
+            android:text="@string/rename"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/delete"
+            app:layout_constraintStart_toEndOf="@+id/open"
+            app:layout_constraintTop_toBottomOf="@+id/myList"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1sp"
+            android:text="@string/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/create"
+            app:layout_constraintStart_toEndOf="@+id/rename"
+            app:layout_constraintTop_toBottomOf="@+id/myList"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1sp"
+            android:text="@string/create"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/perSearch"
+            app:layout_constraintStart_toEndOf="@+id/delete"
+            app:layout_constraintTop_toBottomOf="@+id/myList"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ListView
+            android:id="@+id/myList"
+            android:layout_width="395dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:choiceMode="singleChoice"
+            app:layout_constraintBottom_toTopOf="@+id/open"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/perSearch"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@android:string/search_go"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/create"
+            app:layout_constraintTop_toBottomOf="@+id/myList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

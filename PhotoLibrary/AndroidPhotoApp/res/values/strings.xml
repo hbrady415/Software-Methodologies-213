@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PhotoRun</string>
+    <string name="create">create</string>
+    <string name="delete">delete</string>
+    <string name="rename">rename</string>
+    <string name="open">open</string>
+    <string name="add_photo">Add</string>
+    <string name="delete_photo">Delete</string>
+    <string name="display">Display</string>
+    <string name="album_view">Album View</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="delete_tag">Delete Tag</string>
+    <string name="move_photo">Move</string>
+    <string-array name="types">
+        <item>Location</item>
+        <item>Person</item>
+    </string-array>
+    <string name="bak"><![CDATA[<]]></string>
+    <string name="nxt"><![CDATA[>]]></string>
+    <string name="picname">picName</string>
+    <string name="filename">fileName</string>
+    <string name="search">Search</string>
+    <string name="searchView">Search View</string>
+    <string name="search_with_person">search with person</string>
+    <string name="search_with_location">search with location</string>
+    <string name="location">Location:</string>
+    <string name="location_and_person">Location and Person</string>
+    <string name="location_or_person">Location or Person</string>
+    <string name="person">Person:</string>
+    <string name="tags">Tags:</string>
+</resources>
